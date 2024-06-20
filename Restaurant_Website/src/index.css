@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background-img {
+    background-image: url('./assets/images/bg2.png'); /* Adjust the path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 561px;
+    position: relative;
+}
+  
+.background-imgS {
+    background-image: url('./assets/images/bg3.png'); /* Adjust the path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 561px;
+    position: relative;
+}
