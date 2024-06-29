@@ -13,9 +13,11 @@ const Testimonial = () => {
           <h6 className="inline text-secondary px-4 py-1 bg-[#f5dfdc] text-[#ff5a3c] border border-white rounded-3xl">
             Our Testimonial
           </h6>
-          <h1 className="text-5xl font-bold mt-6 mb-8">Clients Feedback</h1>
+          <h1 className="text-3xl lg:text-5xl font-bold mt-6 mb-8">
+            Clients Feedback
+          </h1>
         </div>
-        <div className="flex flex-wrap justify-center space-x-8">
+        <div className="flex flex-wrap lg:flex-row justify-center space-y-16 lg:space-y-0 lg:justify-center lg:space-x-8">
           <div className="max-w-xs p-6 text-center shadow-lg hover:border-b-4 hover:border-hover_colr cursor-pointer hover:">
             <div className="mb-4">
               <p className="text-left pt-2 text-xl">

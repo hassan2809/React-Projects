@@ -1,4 +1,6 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import {
   Navbar,
   MainSection,
@@ -10,19 +12,14 @@ import {
   Footer,
   Scroll,
 } from "./components";
-
+import Home from "./Pages/Home";
 function App() {
   return (
     <div>
-      <Navbar />
-      <MainSection />
-      <About />
-      <Counterup />
-      <Services />
-      <Apartments />
-      <Testimonial />
-      <Footer />
-      <Scroll />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }

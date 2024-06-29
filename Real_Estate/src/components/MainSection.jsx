@@ -4,19 +4,19 @@ import Building from "../assets/building.png";
 
 const MainSection = () => {
   return (
-    <div className="bg-section_bg h-[529px] flex justify-around items-center">
-      <div>
+    <div className="bg-section_bg py-10 pl-12 lg:pl-0 lg:py-0 lg:h-[529px] flex flex-col lg:flex-row justify-around items-center">
+      <div className="">
         <div className="flex items-center">
           <FaHome className="text-hover_colr text-xl" />
           <p className="pl-2 text-xl">Real Estate Agency</p>
         </div>
         <div>
-          <p className="text-5xl font-bold py-6">
-            Find Your Dream <br /> House By Us
+          <p className="text-3xl lg:text-5xl font-bold py-6 w-[300px] lg:w-[500px]">
+            Find Your Dream House By Us
           </p>
-          <p className="pl-8 border-l-[1.5px] border-black">
+          <p className="pl-4 lg:pl-8 border-l-[1.5px] border-black lg:w-[400px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            <br /> sed do eiusmod tempor incididunt ut labore.
+            sed do eiusmod tempor incididunt ut labore.
           </p>
           <button
             type="button"
@@ -26,8 +26,12 @@ const MainSection = () => {
           </button>
         </div>
       </div>
-      <div>
-        <img src={Building} alt="" className="w-[500px] text-right" />
+      <div className="hidden lg:block lg:pl-8">
+        <img
+          src={Building}
+          alt=""
+          className="w-full lg:w-[500px] lg:text-right"
+        />
       </div>
     </div>
   );
